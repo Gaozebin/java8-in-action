@@ -34,6 +34,13 @@ public class Dish {
     }
     public enum Type{MEAT,FISH,OTHER}
 
+    @Override
+    public String toString() {
+        return "Dish{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+
     public static final List<Dish> menu =
             Arrays.asList(new Dish("pork", false, 800, Dish.Type.MEAT),
                     new Dish("beef", false, 700, Dish.Type.MEAT),
